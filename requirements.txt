@@ -1,0 +1,4 @@
+spacy==3.7.6
+transformers==4.44.2
+torch==2.4.1+cpu
+requests==2.32.3

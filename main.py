@@ -1,4 +1,4 @@
-import nltk
+# import nltk
 import spacy
 
 # from nltk.chat.util import Chat, reflections
