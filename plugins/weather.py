@@ -1,11 +1,14 @@
 import requests
 import requests.exceptions
+import os
+
+from dotenv import load_dotenv
+
+load_dotenv()
+api_key = os.getenv('WEATHER_API_KEY') #api key
 
 # Function to get weather data from OpenWeatherMap API
 def get_weather(city):
-    
-
-    api_key = '362553b136b4f22b19867da510c114ab' #api key
     
     url = f"http://api.openweathermap.org/data/2.5/weather?q={city}&appid={api_key}"
 

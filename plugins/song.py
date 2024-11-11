@@ -1,9 +1,14 @@
 import requests
 import requests.exceptions
+import os
 
-client_id = "LiWRr4ql7dATqK_MKITyc6fRAGKju3xdaGEE0cEA_wslFFyyY8pk4kGeEQA342Mo"
+from dotenv import load_dotenv
 
-access_token = "mcASXxUdh5U2NhoBIyx1J9dwzdEdMuQ8-OwHVoyyC4japRjBiTD7y4fKMM36LHKC"
+load_dotenv()
+
+client_id = os.getenv('CLIENT_ID')
+
+access_token = os.getenv('ACCESS_TOKEN')
 
 def search_song(query):
 
